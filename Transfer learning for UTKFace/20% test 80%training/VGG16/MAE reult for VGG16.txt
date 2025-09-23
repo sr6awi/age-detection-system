@@ -1,0 +1,5 @@
+started with 20 epochs and 1024 neuron first  layer in ANN after this step added a dropout layer of a rate 0.5(50%) then BatchNormalization
+
+149/149 [==============================] - 2s 12ms/step - loss: 7.7170 - mae: 7.7170
+Test Loss: 7.716973781585693
+Test MAE: 7.716973781585693

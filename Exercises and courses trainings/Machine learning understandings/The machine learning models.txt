@@ -1,0 +1,107 @@
+
+--Deep learning-- is a technique in "MACHINE LEARNING".
+
+its a set of techniques to extract knowledge from available data to make a decision 
+
+
+1- Linear regression with single variable:
+
+                         y = m x + b ,  where 
+                                         m = "gradient or slope"
+                                         x = "coefficient" 
+                                         b = "y intercept"
+
+* fitting data means your training the linear regression model using available data points --> .fit() 
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2- Linear regression with multiple variables: 
+
+                         y = m1 x1 + m2 x2 + m3 x3 + b ,  where 
+                                                          m = coefficients 
+                                                          x = independent variable 
+                                                          y = dependent variable 
+                                                          b = intercept
+* Data preprocessing : Handling the NA values 
+
+------------------------------------------------------------------------------------------------------------------------------------------
+3- Gradiant descent :  (internals) ********important concept in machine learning********
+
+-observation or training the datset which is <<input>> and <<output>>
+-using this information you will derive and equation which is the <<prediction function>> to predict the future values we will be finding out the <<Best fit line>> 
+
+
+the result is called as "Mean squared error" 
+
+mse = 1/n limit i = 1 to n (yi-(m xi + b))^2 -----> finds out the best fit line for the given training dataset 
+
+
+**GOAL** : is to find the gloabal minima 
+
+a/am = 2/n limit i = 1 to n (-x1(yi - (m xi + b))
+
+a/ab = 2/n limit i = 1 to n - (yi - (m xi + b )) 
+
+-> m = m - learning rate * a/am 
+-> b = b - learning rate * a/ab 
+machine learning is good with handling the numeric data 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+4- the categorial , dummy variables , one hot encoding 
+building the predictor function the machine learning is good in handling the text data the best way and thing to use is one hot encoding 
+
+there are 2 types categorical variables :
+ 1- nominal : where the categories dont have any numeric ordering in between or any order relationship 
+* ex : male and female  - green and red - lefke and girne 
+2- ordinal : wherw the catogeries have some sort of numerical ordering in between them 
+* ex : graduate , phd and masters where masters < phd etc..
+
+pandas has the dummies method : ------> pd.get_dummies()
+
+you can merge new data frame to the existing variable as an array 
+------------>  merged = pd.concat([df,dummies],axis = 'columns')
+                     merged
+
+we can drop a dummy variable column from the merged table by using 
+------------> final = merged.drop(['town','west windsor'],axis = 'columns')
+                    final
+**note** : when sklearn linear regression model it wil work even if you didnt do it automatically because linear regression is aware from the dummy variable trap we can do it by ourself it will be a good practice . if you wanna know how accurate your model is : -->  model.score(x,y) 
+
+- fit and transform it takes the label column as an input ex : dfle = df
+                                                                                         dfle.town = le.fit_transform(dfle.town)
+											 dfle
+
+X = ohe.fit_transform(X).toarray()
+X
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+5- training and spiliting the data 
+
+sometimes we use to train the entire dataset but its not a good strategy to use the good one is to split the dataset 
+into parts usually into 80% training and the rest is testing 
+
+
+The approach we are going to use here is to split available data in two sets
+
+    Training: We will train our model on this dataset
+    Testing: We will use this subset to make actual predictions using trained model
+
+The reason we don't use same training set for testing is because our model has seen those samples before, using same samples for making predictions might give us wrong impression about accuracy of our model. It is like you ask same questions in exam paper as you tought the students in the class.
+
+the first thing is use trained test split method 
+since we used training 80% and 20% for test we will split the two df into : -------> X_train , X_test , y_train , y_test = train_test_split(X,y,test_size=0.2)
+
+then we can apply the linear regression model: ----------------------> from sklearn.linear_model import LinearRegression 
+                                                                                                       clf = LinearRegression()
+
+then we will apply the fit method to train the model : --------------> clf.fit(X_train,X_test)
+
+then call the predict function : ------------->  clf.predict(X_test)
+
+then score to check the accuracy : -------------> clf.score(X_test,y_test) 
+                                                                         0.8719339011272852 (to get high accuracy keep on changing the training ratio eiter 70 to 30 , 50 to 50)
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+ 
+ 
