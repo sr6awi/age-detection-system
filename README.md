@@ -77,5 +77,5 @@ Feel free to fork this repo, open issues, or submit PRs to extend experiments wi
 
 ## 📬 Contact
 👤 **Salem Ihsan Abidrabbu**  
-🔗 [LinkedIn](https://linkedin.com/in/your-profile) | [GitHub](https://github.com/sr6awi)  
+🔗 [LinkedIn]((https://www.linkedin.com/in/salem-sartawi-499729240)) | [GitHub](https://github.com/sr6awi)  
 📧 Email: SALEMIHSAN1234@GMAIL.COM
