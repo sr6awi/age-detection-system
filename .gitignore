@@ -1,0 +1,13 @@
+*.tgz
+*.zip
+*.tar
+*.tar.gz
+*.h5
+*.pkl
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.npz
+*.csv
+*.xlsx
