@@ -12,7 +12,7 @@ This project applies both **custom CNNs** and **transfer learning** with powerfu
 ---
 
 ## 🧠 Architectures Used
-- CNN (from scratch)
+- CNN (from scratch)  
 - VGG16 / VGG19  
 - ResNet50 / ResNet101  
 - DenseNet121  
@@ -39,6 +39,7 @@ This result is **competitive with or surpasses many published works** on the sam
 ┣ 📜 README.md
 
 
+
 ---
 
 ## ⚙️ Tech Stack
@@ -50,7 +51,7 @@ This result is **competitive with or surpasses many published works** on the sam
 ---
 
 ## 📌 Key Highlights
-- Implemented **custom CNNs** and tuned hyperparameters.
+- Implemented **custom CNNs** and tuned hyperparameters.  
 - Used **Transfer Learning** to boost performance.  
 - Visualized **training/validation curves and MAE metrics**.  
 - End-to-end workflow: **data preprocessing → training → evaluation → reporting**.  
@@ -78,4 +79,3 @@ Feel free to fork this repo, open issues, or submit PRs to extend experiments wi
 👤 **Salem Ihsan Abidrabbu**  
 🔗 [LinkedIn](https://linkedin.com/in/your-profile) | [GitHub](https://github.com/sr6awi)  
 📧 Email: SALEMIHSAN1234@GMAIL.COM
-
