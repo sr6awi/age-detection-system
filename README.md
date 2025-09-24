@@ -29,7 +29,6 @@ This result is **competitive with or surpasses many published works** on the sam
 
 ## 🗂️ Repository Structure
 
-
 📦 age-detection-system
 ┣ 📂 Documents # Reports, poster, presentation
 ┣ 📂 Exercises and courses trainings # ML/DL practice codes
@@ -38,6 +37,7 @@ This result is **competitive with or surpasses many published works** on the sam
 ┣ 📂 UTKFace trainings # CNN/Regression training scripts
 ┣ 📜 .gitignore
 ┣ 📜 README.md
+
 
 ---
 
